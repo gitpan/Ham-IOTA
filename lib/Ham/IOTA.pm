@@ -16,7 +16,7 @@ use LWP::Simple;
 use Carp;
 
 our $SOURCE  = "http://www.rsgbiota.org/xml/fulllist.xml";
-our $VERSION = '1.0';
+our $VERSION = '1.1';
 
 sub new {
   my ($class) = @_;

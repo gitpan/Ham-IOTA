@@ -1,41 +1,39 @@
 <?xml version='1.0' encoding='utf-8'?>
 <testsuites>
-  <testsuite name="t_00_podcoverage_t" errors="0" failures="0" tests="1" time="0.120895147323608">
-    <system-out>1..1
-ok 1 - Pod coverage on Ham::IOTA
+  <testsuite name="t_00_critic_t" errors="0" failures="0" tests="0" time="0.000298023223876953">
+    <system-out>1..0 # SKIP Author test.  Set $ENV{TEST_AUTHOR} to a true value to run.
 </system-out>
-    <testcase name="Pod coverage on Ham::IOTA" classname="t_00_podcoverage_t" time="0.117783069610596" />
   </testsuite>
-  <testsuite name="t_00_compile_pl_t" errors="0" failures="0" tests="1" time="0.16693902015686">
+  <testsuite name="t_00_compile_pm_t" errors="0" failures="0" tests="1" time="0.146014928817749">
+    <system-out>1..1
+ok 1 - Compile test for blib/lib/Ham/IOTA.pm
+</system-out>
+    <testcase name="Compile test for blib/lib/Ham/IOTA.pm" classname="t_00_compile_pm_t" time="0.145677089691162" />
+  </testsuite>
+  <testsuite name="t_00_compile_pl_t" errors="0" failures="0" tests="1" time="0.164505958557129">
     <system-out>1..1
 bin/iota-update syntax OK
 ok 1 - Compile test for bin/iota-update
 </system-out>
-    <testcase name="Compile test for bin/iota-update" classname="t_00_compile_pl_t" time="0.00665616989135742" />
+    <testcase name="Compile test for bin/iota-update" classname="t_00_compile_pl_t" time="0.00864696502685547" />
   </testsuite>
-  <testsuite name="t_10_ham_iota_t" errors="0" failures="0" tests="2" time="0.161911010742188">
+  <testsuite name="t_10_ham_iota_t" errors="0" failures="0" tests="2" time="0.166046857833862">
     <system-out>1..2
 ok 1 - use Ham::IOTA;
 ok 2 - deep parsed data
 </system-out>
-    <testcase name="use Ham::IOTA;" classname="t_10_ham_iota_t" time="0.144108057022095" />
-    <testcase name="deep parsed data" classname="t_10_ham_iota_t" time="0.0145249366760254" />
+    <testcase name="use Ham::IOTA;" classname="t_10_ham_iota_t" time="0.146317958831787" />
+    <testcase name="deep parsed data" classname="t_10_ham_iota_t" time="0.0161709785461426" />
   </testsuite>
-  <testsuite name="t_00_compile_pm_t" errors="0" failures="0" tests="1" time="0.136470079421997">
-    <system-out>1..1
-ok 1 - Compile test for blib/lib/Ham/IOTA.pm
-</system-out>
-    <testcase name="Compile test for blib/lib/Ham/IOTA.pm" classname="t_00_compile_pm_t" time="0.136113882064819" />
-  </testsuite>
-  <testsuite name="t_00_pod_t" errors="0" failures="0" tests="2" time="0.00127911567687988">
+  <testsuite name="t_00_pod_t" errors="0" failures="0" tests="2" time="0.00648188591003418">
     <system-out>1..2
 ok 1 - POD test for blib/lib/Ham/IOTA.pm
 ok 2 - POD test for blib/script/iota-update (no pod)
 </system-out>
-    <testcase name="POD test for blib/lib/Ham/IOTA.pm" classname="t_00_pod_t" time="0.00059819221496582" />
-    <testcase name="POD test for blib/script/iota-update (no pod)" classname="t_00_pod_t" time="0.000332832336425781" />
+    <testcase name="POD test for blib/lib/Ham/IOTA.pm" classname="t_00_pod_t" time="0.0053858757019043" />
+    <testcase name="POD test for blib/script/iota-update (no pod)" classname="t_00_pod_t" time="0.000792980194091797" />
   </testsuite>
-  <testsuite name="t_00_distribution_t" errors="0" failures="0" tests="9" time="0.179733037948608">
+  <testsuite name="t_00_distribution_t" errors="0" failures="0" tests="9" time="0.145034074783325">
     <system-out>1..9
 ok 1 - Checking MANIFEST integrity
 ok 2 - use Ham::IOTA;
@@ -47,22 +45,20 @@ ok 7 - Changes(.pod)? or ChangeLog(.pod)? exists
 ok 8 - Build.PL or Makefile.PL exists
 ok 9 - Pod Coverage ok
 </system-out>
-    <testcase name="Checking MANIFEST integrity" classname="t_00_distribution_t" time="0.135512828826904" />
-    <testcase name="use Ham::IOTA; (2)" classname="t_00_distribution_t" time="0.000380992889404297" />
-    <testcase name="Ham::IOTA defines a version (2)" classname="t_00_distribution_t" time="0.0286800861358643" />
-    <testcase name="POD test for blib/lib/Ham/IOTA.pm (2)" classname="t_00_distribution_t" time="0.000147104263305664" />
-    <testcase name="MANIFEST exists (2)" classname="t_00_distribution_t" time="0.000126838684082031" />
-    <testcase name="README exists (2)" classname="t_00_distribution_t" time="0.00012516975402832" />
-    <testcase name="Changes(.pod)? or ChangeLog(.pod)? exists (2)" classname="t_00_distribution_t" time="0.000124931335449219" />
-    <testcase name="Build.PL or Makefile.PL exists (2)" classname="t_00_distribution_t" time="0.000123977661132812" />
-    <testcase name="Pod Coverage ok (2)" classname="t_00_distribution_t" time="0.0121579170227051" />
+    <testcase name="Checking MANIFEST integrity" classname="t_00_distribution_t" time="0.00457000732421875" />
+    <testcase name="use Ham::IOTA; (2)" classname="t_00_distribution_t" time="0.103718042373657" />
+    <testcase name="Ham::IOTA defines a version (2)" classname="t_00_distribution_t" time="0.00024104118347168" />
+    <testcase name="POD test for blib/lib/Ham/IOTA.pm (2)" classname="t_00_distribution_t" time="0.0200259685516357" />
+    <testcase name="MANIFEST exists (2)" classname="t_00_distribution_t" time="0.000277996063232422" />
+    <testcase name="README exists (2)" classname="t_00_distribution_t" time="0.000129938125610352" />
+    <testcase name="Changes(.pod)? or ChangeLog(.pod)? exists (2)" classname="t_00_distribution_t" time="0.000108003616333008" />
+    <testcase name="Build.PL or Makefile.PL exists (2)" classname="t_00_distribution_t" time="0.0130240917205811" />
+    <testcase name="Pod Coverage ok (2)" classname="t_00_distribution_t" time="0.000211954116821289" />
   </testsuite>
-  <testsuite name="t_00_critic_t" errors="0" failures="0" tests="2" time="0.298678874969482">
-    <system-out>1..2
-ok 1 - Test::Perl::Critic for &quot;bin/iota-update&quot;
-ok 2 - Test::Perl::Critic for &quot;lib/Ham/IOTA.pm&quot;
+  <testsuite name="t_00_podcoverage_t" errors="0" failures="0" tests="1" time="0.117582082748413">
+    <system-out>1..1
+ok 1 - Pod coverage on Ham::IOTA
 </system-out>
-    <testcase name="Test::Perl::Critic for &quot;bin/iota-update&quot; (2)" classname="t_00_critic_t" time="0.134305953979492" />
-    <testcase name="Test::Perl::Critic for &quot;lib/Ham/IOTA.pm&quot; (2)" classname="t_00_critic_t" time="0.15513801574707" />
+    <testcase name="Pod coverage on Ham::IOTA (2)" classname="t_00_podcoverage_t" time="0.115467071533203" />
   </testsuite>
 </testsuites>
