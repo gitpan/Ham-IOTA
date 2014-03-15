@@ -16,6 +16,7 @@
    "prereqs" : {
       "build" : {
          "requires" : {
+            "TAP::Harness::JUnit" : "0.41",
             "Test::More" : "0.62"
          }
       },
@@ -39,7 +40,7 @@
    "provides" : {
       "Ham::IOTA" : {
          "file" : "lib/Ham/IOTA.pm",
-         "version" : "1.1"
+         "version" : "1.2"
       }
    },
    "release_status" : "stable",
@@ -48,5 +49,5 @@
          "http://www.gnu.org/licenses/old-licenses/gpl-1.0.txt"
       ]
    },
-   "version" : "1.1"
+   "version" : "1.2"
 }

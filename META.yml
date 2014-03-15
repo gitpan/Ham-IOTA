@@ -3,6 +3,7 @@ abstract: 'IOTA groups & islands'
 author:
   - 'Roger Pettett <rmp@psyphi.net>'
 build_requires:
+  TAP::Harness::JUnit: 0.41
   Test::More: 0.62
 configure_requires:
   Module::Build: 0.42
@@ -16,7 +17,7 @@ name: Ham-IOTA
 provides:
   Ham::IOTA:
     file: lib/Ham/IOTA.pm
-    version: 1.1
+    version: 1.2
 requires:
   Carp: 1.04
   English: 1.02
@@ -27,4 +28,4 @@ requires:
   warnings: 1.05
 resources:
   license: http://www.gnu.org/licenses/old-licenses/gpl-1.0.txt
-version: 1.1
+version: 1.2

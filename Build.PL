@@ -53,6 +53,7 @@ my $builder = $class->new(
                                                  },
                           build_requires      => {
                                                   'Test::More'              => '0.62',
+                                                  'TAP::Harness::JUnit'     => '0.41',
                                                  },
                           build_recommends    => {
                                                   'Test::Distribution'      => '2.00',
